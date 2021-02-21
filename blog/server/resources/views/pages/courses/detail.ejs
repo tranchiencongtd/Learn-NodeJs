@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Education</title>
+   <%- include('../../partials/stylesheet') %>
+</head> 
+<body>
+  <div class="container">
+    <%- include('../../partials/header') %>
+    <div class="row">
+      <div class="col-sm-4">
+        <h5>Khóa học</h5>
+      </div>
+      <div class="col-sm-8">
+        <h2><%= course.name %></h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/<%= course.videoId %>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p><%= course.content %></p>
+      </div>
+    </div>
+  </div>
+
+  <%- include('../../partials/javascript') %>
+ </body>
+ </html> 
